@@ -1,0 +1,2489 @@
+{
+  "schema": 35,
+  "title": "thetree Vector 2022 standalone bootstrap source manifest",
+  "upstreamLockFile": "UPSTREAM-LOCK.json",
+  "hostLock": {
+    "schema": 2,
+    "frontend": {
+      "repository": "wjdgustn/thetree-frontend",
+      "ref": "master",
+      "commit": "636fa9ade48a47f12f047ec1aa58f220992077ea",
+      "checkout": "host-thetree-frontend",
+      "sourceRoot": "src/views/contents",
+      "bootstrapPaths": [
+        "src/views/contents/"
+      ]
+    },
+    "backend": {
+      "repository": "wjdgustn/thetree",
+      "ref": "master",
+      "commit": "698e2122bafdd02e6e65170c1d55b319336a7e72",
+      "checkout": "host-thetree",
+      "sourceRoots": [
+        "routes",
+        "utils/namumark"
+      ],
+      "bootstrapPaths": [
+        "routes/",
+        "utils/namumark/"
+      ]
+    },
+    "contract": "lib/vector2022SpecialPageContract.js",
+    "validator": "tools/host-view-contract-engine.mjs"
+  },
+  "distribution": {
+    "mode": "bootstrap-source-only",
+    "snapshotDate": "2026-08-13",
+    "releaseLine": "REL1_46",
+    "officialDistribution": {
+      "version": "1.46.0",
+      "releaseDate": "2026-06-30",
+      "observedDate": "2026-08-13",
+      "downloadUrl": "https://releases.wikimedia.org/mediawiki/1.46/mediawiki-1.46.0.tar.gz",
+      "sha512": "7dd1cb2aaf27c18f35f4fb713244d8a129813c3c674be2d312fe0d1bcba8842abca1b5605952d8a50a67f4c026e8ea8af4635a24f40572e7492d9aa0fd7167e2",
+      "coreTagObject": "5faa6fba8279f8763f90405df63e5ba31d34e0c7"
+    },
+    "vendorIncluded": false,
+    "generatedOutputsIncluded": false,
+    "runtimeAssetsIncluded": false,
+    "upstreamCheckoutsIncluded": false,
+    "bootstrap": "npm run bootstrap",
+    "vendorProvenance": "git-checkout-only",
+    "upstreamBuildOutputsIncluded": false
+  },
+  "sourceInventory": {
+    "schema": 22,
+    "sourceCoverage": {
+      "schema": 1,
+      "root": ".",
+      "declaredInventories": [
+        "sourceInventory.localFiles",
+        "sourceInventory.portedFiles"
+      ],
+      "excludedInventories": [
+        "sourceInventory.generatedFiles",
+        "sourceInventory.materializedRuntimeAssets"
+      ],
+      "ignoredRoots": [
+        ".build-tools",
+        ".git",
+        ".test-dist",
+        ".test-host",
+        ".upstream",
+        "node_modules",
+        "vendor"
+      ],
+      "inventoryContracts": [
+        {
+          "inventory": "sourceInventory.localFiles",
+          "requiredFields": [
+            "path",
+            "kind",
+            "hostDependency"
+          ],
+          "allowedValues": {
+            "kind": [
+              "package-metadata",
+              "skin-integration",
+              "host-adapter",
+              "origin-runtime",
+              "generation-tool",
+              "generation-contract",
+              "upstream-build-contract"
+            ]
+          }
+        },
+        {
+          "inventory": "sourceInventory.portedFiles",
+          "requiredFields": [
+            "path",
+            "kind",
+            "relation",
+            "hostDependency",
+            "repository",
+            "automationStatus",
+            "license",
+            "modifiedDates",
+            "differenceClasses",
+            "originInputs"
+          ],
+          "requiredAnyFields": [
+            "upstreamPath",
+            "upstreamPaths"
+          ],
+          "allowedValues": {
+            "kind": [
+              "source-port"
+            ],
+            "automationStatus": [
+              "adapter-required"
+            ]
+          }
+        }
+      ]
+    },
+    "vendorLessClosure": {
+      "schema": 3,
+      "seeds": "declared-less-files",
+      "repositoryDiscoveryPatterns": [
+        "**/*.less",
+        "**/*.css"
+      ],
+      "parser": "less-ast",
+      "resolution": "shared-resource-loader-resolver",
+      "compilation": "less-import-manager",
+      "materialization": "one-upstream-file-to-one-vendor-file"
+    },
+    "vendorFiles": [
+      {
+        "path": "vendor/mediawiki-core/includes/config-schema.php",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "includes/config-schema.php"
+      },
+      {
+        "path": "vendor/mediawiki-core/includes/Output/OutputPage.php",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "includes/Output/OutputPage.php"
+      },
+      {
+        "path": "vendor/mediawiki-core/includes/Preferences/DefaultPreferencesFactory.php",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "includes/Preferences/DefaultPreferencesFactory.php"
+      },
+      {
+        "path": "vendor/mediawiki-core/includes/ResourceLoader/ClientHtml.php",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "includes/ResourceLoader/ClientHtml.php"
+      },
+      {
+        "path": "vendor/mediawiki-core/includes/ResourceLoader/SkinModule.php",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "includes/ResourceLoader/SkinModule.php"
+      },
+      {
+        "path": "vendor/mediawiki-core/languages/i18n/en.json",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "languages/i18n/en.json"
+      },
+      {
+        "path": "vendor/mediawiki-core/languages/i18n/ko.json",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "languages/i18n/ko.json"
+      },
+      {
+        "path": "vendor/mediawiki-core/languages/i18n/nontranslatable/en.json",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "languages/i18n/nontranslatable/en.json"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex-icons/codex-icons.json",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex-icons/codex-icons.json"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/_plugin-vue_export-helper.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/_plugin-vue_export-helper.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxButton.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxButton.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxButton.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxButton.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxCheckbox.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxCheckbox.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxDialog.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxDialog.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxDialog.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxDialog.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxIcon.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxIcon.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxLabel.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxLabel.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxLabel.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxLabel.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxMenu.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxMenu.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxMenu.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxMenu.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxMenuItem.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxMenuItem.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxMenuItem.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxMenuItem.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxMessage.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxMessage.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxMessage.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxMessage.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxProgressBar.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxProgressBar.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxProgressBar.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxProgressBar.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxRadio.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxRadio.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxRadio.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxRadio.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxSearchInput.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxSearchInput.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxSearchInput.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxSearchInput.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxSearchResultTitle.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxSearchResultTitle.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxSearchResultTitle.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxSearchResultTitle.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxTextInput.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxTextInput.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxTextInput.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxTextInput.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxThumbnail.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxThumbnail.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxThumbnail.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxThumbnail.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxTypeaheadSearch.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxTypeaheadSearch.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/CdxTypeaheadSearch.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/CdxTypeaheadSearch.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/constants.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/constants.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/Icon.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/Icon.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/Icon.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/Icon.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/manifest.json",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/manifest.json"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/unwrapElement.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/unwrapElement.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useComputedDirection.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useComputedDirection.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useComputedDisabled.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useComputedDisabled.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useComputedLanguage.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useComputedLanguage.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useFieldData.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useFieldData.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useI18n.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useI18n.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useI18nWithOverride.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useI18nWithOverride.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useIconOnlyButton.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useIconOnlyButton.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useIntersectionObserver.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useIntersectionObserver.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useLabelChecker.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useLabelChecker.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useModelWrapper.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useModelWrapper.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useResizeObserver.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useResizeObserver.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useScrollLock.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useScrollLock.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useSlotContents.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useSlotContents.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useSplitAttributes.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useSplitAttributes.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/lib/codex/modules/useWarnOnce.cjs",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/lib/codex/modules/useWarnOnce.cjs"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/Resources.php",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/Resources.php"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/jquery/jquery.highlightText.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/jquery/jquery.highlightText.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/jquery/jquery.suggestions.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/jquery/jquery.suggestions.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/jquery/jquery.suggestions.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/jquery/jquery.suggestions.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.less/mediawiki.mixins.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.less/mediawiki.mixins.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.less/mediawiki.skin.codex/mixins/button-layout-flush.less",
+        "status": "mirrored",
+        "repository": "design-codex",
+        "upstreamPath": "packages/codex/src/themes/mixins/public/button-layout-flush.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.less/mediawiki.skin.codex/mixins/codex-public-mixins.less",
+        "status": "mirrored",
+        "repository": "design-codex",
+        "upstreamPath": "packages/codex/src/themes/mixins/public/codex-public-mixins.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.less/mediawiki.skin.codex/mixins/css-icon.less",
+        "status": "mirrored",
+        "repository": "design-codex",
+        "upstreamPath": "packages/codex/src/themes/mixins/public/css-icon.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.less/mediawiki.skin.codex/mixins/link.less",
+        "status": "mirrored",
+        "repository": "design-codex",
+        "upstreamPath": "packages/codex/src/themes/mixins/public/link.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.less/mediawiki.skin.defaults.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.less/mediawiki.skin.defaults.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.less/mediawiki.skin.variables.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.less/mediawiki.skin.variables.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.page.ready/enableSearchDialog.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.page.ready/enableSearchDialog.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.searchSuggest/searchSuggest.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.searchSuggest/searchSuggest.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.searchSuggest/searchSuggest.js",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.searchSuggest/searchSuggest.js"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning.typeaheadSearch/App.vue",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning.typeaheadSearch/App.vue"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning.typeaheadSearch/TypeaheadSearchWrapper.vue",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning.typeaheadSearch/TypeaheadSearchWrapper.vue"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/accessibility.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/accessibility.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/content.body.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/content.body.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/content.links.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/content.links.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/content.media-common.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/content.media-common.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/content.media-dark.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/content.media-dark.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/content.media-screen.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/content.media-screen.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/content.tables.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/content.tables.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/content.variables.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/content.variables.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/elements.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/elements.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/i18n-counter-styles.css",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/i18n-counter-styles.css"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/i18n-headings.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/i18n-headings.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/i18n-ordered-lists.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/i18n-ordered-lists.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/interface-edit-section-links.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/interface-edit-section-links.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/interface-indicators.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/interface-indicators.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/interface-site-notice.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/interface-site-notice.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/interface-subtitle.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/interface-subtitle.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/interface-user-message.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/interface-user-message.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/interface.category.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/interface.category.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/interface.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/interface.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/normalize.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/normalize.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/toc/common.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/toc/common.less"
+      },
+      {
+        "path": "vendor/mediawiki-core/resources/src/mediawiki.skinning/toc/screen.less",
+        "status": "mirrored",
+        "repository": "mediawiki",
+        "upstreamPath": "resources/src/mediawiki.skinning/toc/screen.less"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/i18n/en.json",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "i18n/en.json"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/i18n/ko.json",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "i18n/ko.json"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponent.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponent.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentAppearance.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentAppearance.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentButton.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentButton.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentDropdown.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentDropdown.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentLanguageDropdown.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentLanguageDropdown.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentLink.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentLink.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentMainMenu.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentMainMenu.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentMenu.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentMenu.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentMenuListItem.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentMenuListItem.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentPageTools.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentPageTools.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentPinnableContainer.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentPinnableContainer.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentPinnableElement.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentPinnableElement.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentPinnableHeader.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentPinnableHeader.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentSearchBox.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentSearchBox.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentStickyHeader.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentStickyHeader.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentTableOfContents.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentTableOfContents.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentUserLinks.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentUserLinks.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Components/VectorComponentVariants.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Components/VectorComponentVariants.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/Constants.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/Constants.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/SkinVector22.php",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/SkinVector22.php"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Appearance.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Appearance.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/BeforeContent.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/BeforeContent.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/BottomDock.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/BottomDock.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Button.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Button.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/ColumnEnd.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/ColumnEnd.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/ColumnStart.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/ColumnStart.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Close.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Dropdown/Close.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Open.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Dropdown/Open.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Footer__row.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Footer__row.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Footer.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Footer.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Header.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Header.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Icon.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Icon.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Indicators.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Indicators.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/LanguageDropdown.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/LanguageDropdown.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/LegacyMenu.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/LegacyMenu.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/LegacySearchBox.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/LegacySearchBox.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/LegacySidebar.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/LegacySidebar.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/LegacyUserLinks.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/LegacyUserLinks.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Link.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Link.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Logo.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Logo.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/MainMenu.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/MainMenu.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/MainMenuDropdown.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/MainMenuDropdown.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/MainMenuPinned.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/MainMenuPinned.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Menu.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Menu.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/MenuContents.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/MenuContents.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/MenuListItem.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/MenuListItem.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/PageTitlebar.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/PageTitlebar.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/PageToolbar.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/PageToolbar.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/PageTools.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/PageTools.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Close.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/PinnableContainer/Close.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Pinned/Open.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/PinnableContainer/Pinned/Open.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Unpinned/Open.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/PinnableContainer/Unpinned/Open.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/PinnableElement/Close.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/PinnableElement/Close.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/PinnableElement/Open.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/PinnableElement/Open.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/PinnableHeader.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/PinnableHeader.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/SearchBox.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/SearchBox.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/skin-legacy.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/skin-legacy.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/skin.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/skin.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/StickyHeader.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/StickyHeader.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/TableOfContents__line.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/TableOfContents__line.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/TableOfContents__list.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/TableOfContents__list.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/TableOfContents.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/TableOfContents.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Tabs.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Tabs.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/UserLinks.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/UserLinks.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/UserLinksDropdown.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/UserLinksDropdown.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/includes/templates/Variants.mustache",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "includes/templates/Variants.mustache"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/mediawiki.less/vector/mediawiki.skin.variables.less",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/mediawiki.less/vector/mediawiki.skin.variables.less"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.clientPreferences/clientPreferences.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.clientPreferences/clientPreferences.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.clientPreferences/clientPreferences.less",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.clientPreferences/clientPreferences.less"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.clientPreferences/package.json",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.clientPreferences/package.json"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.clientPreferences/README.md",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.clientPreferences/README.md"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/bottomDock.less",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/bottomDock.less"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/clientPreferences.json",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/clientPreferences.json"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/config.json",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/config.json"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/deferUntilFrame.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/deferUntilFrame.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/disableNightModeIfGadget.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/disableNightModeIfGadget.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/dropdownMenus.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/dropdownMenus.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/features.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/features.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/index.less",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/index.less"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/languageButton.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/languageButton.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/menuTabs.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/menuTabs.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/pinnableElement.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/pinnableElement.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/popupNotification.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/popupNotification.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/popupNotification.less",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/popupNotification.less"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/portlets.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/portlets.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/scrollObserver.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/scrollObserver.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/searchToggle.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/searchToggle.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/sectionObserver.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/sectionObserver.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/setupIntersectionObservers.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/setupIntersectionObservers.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/skin.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/skin.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/stickyHeader.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/stickyHeader.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/stickyHeader.less",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/stickyHeader.less"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/stickyHeaderAB.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/stickyHeaderAB.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/tableOfContents.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/tableOfContents.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/tableOfContents.less",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/tableOfContents.less"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/tableOfContentsConfig.json",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/tableOfContentsConfig.json"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/tables.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/tables.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/userPreferences.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/userPreferences.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.js/watchstar.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.js/watchstar.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.search/searchConfig.json",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.search/searchConfig.json"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.search/skins.vector.search.js",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.search/skins.vector.search.js"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.styles/CSSCustomProperties.less",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.styles/CSSCustomProperties.less"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/resources/skins.vector.styles/skin.less",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "resources/skins.vector.styles/skin.less"
+      },
+      {
+        "path": "vendor/mediawiki-vector-2022/skin.json",
+        "status": "mirrored",
+        "repository": "mediawiki-skins-Vector",
+        "upstreamPath": "skin.json"
+      },
+      {
+        "path": "vendor/wikimedia-codex/packages/codex-design-tokens/dist/theme-wikimedia-ui-mixin-dark.less",
+        "status": "built",
+        "repository": "design-codex",
+        "buildPath": "packages/codex-design-tokens/dist/theme-wikimedia-ui-mixin-dark.less"
+      },
+      {
+        "path": "vendor/wikimedia-codex/packages/codex-design-tokens/dist/theme-wikimedia-ui-mixin-light.less",
+        "status": "built",
+        "repository": "design-codex",
+        "buildPath": "packages/codex-design-tokens/dist/theme-wikimedia-ui-mixin-light.less"
+      },
+      {
+        "path": "vendor/wikimedia-codex/packages/codex-design-tokens/dist/theme-wikimedia-ui-root.css",
+        "status": "built",
+        "repository": "design-codex",
+        "buildPath": "packages/codex-design-tokens/dist/theme-wikimedia-ui-root.css"
+      },
+      {
+        "path": "vendor/wikimedia-codex/packages/codex-design-tokens/dist/theme-wikimedia-ui.less",
+        "status": "built",
+        "repository": "design-codex",
+        "buildPath": "packages/codex-design-tokens/dist/theme-wikimedia-ui.less"
+      },
+      {
+        "path": "vendor/wikimedia-codex/packages/codex-design-tokens/package.json",
+        "status": "mirrored",
+        "repository": "design-codex",
+        "upstreamPath": "packages/codex-design-tokens/package.json"
+      },
+      {
+        "path": "vendor/wikimedia-codex/packages/codex-icons/codex-icon-paths.less",
+        "status": "built",
+        "repository": "design-codex",
+        "buildPath": "packages/codex-icons/dist/codex-icon-paths.less"
+      },
+      {
+        "path": "vendor/wikimedia-codex/packages/codex-icons/dist/codex-icons.js",
+        "status": "built",
+        "repository": "design-codex",
+        "buildPath": "packages/codex-icons/dist/codex-icons.js"
+      },
+      {
+        "path": "vendor/wikimedia-codex/packages/codex-icons/src/images/reference.svg",
+        "status": "mirrored",
+        "repository": "design-codex",
+        "upstreamPath": "packages/codex-icons/src/images/reference.svg"
+      },
+      {
+        "path": "vendor/wikimedia-codex/packages/codex/dist/codex.style.css",
+        "status": "built",
+        "repository": "design-codex",
+        "buildPath": "packages/codex/dist/codex.style.css"
+      },
+      {
+        "path": "vendor/wikimedia-codex/packages/codex/package.json",
+        "status": "mirrored",
+        "repository": "design-codex",
+        "upstreamPath": "packages/codex/package.json"
+      }
+    ],
+    "portedFiles": [],
+    "localFiles": [
+      {
+        "path": ".gitattributes",
+        "kind": "package-metadata",
+        "hostDependency": "none"
+      },
+      {
+        "path": ".github/workflows/check.yml",
+        "kind": "package-metadata",
+        "hostDependency": "none"
+      },
+      {
+        "path": ".gitignore",
+        "kind": "package-metadata",
+        "hostDependency": "none"
+      },
+      {
+        "path": "COMPOSABLE-SKIN.json",
+        "kind": "package-metadata",
+        "hostDependency": "none"
+      },
+      {
+        "path": "LICENSE",
+        "kind": "package-metadata",
+        "hostDependency": "none"
+      },
+      {
+        "path": "NOTICE",
+        "kind": "package-metadata",
+        "hostDependency": "none"
+      },
+      {
+        "path": "ORIGIN-MANIFEST.json",
+        "kind": "package-metadata",
+        "hostDependency": "none"
+      },
+      {
+        "path": "README.md",
+        "kind": "package-metadata",
+        "hostDependency": "none"
+      },
+      {
+        "path": "THIRD_PARTY_NOTICES.md",
+        "kind": "package-metadata",
+        "hostDependency": "none"
+      },
+      {
+        "path": "UPSTREAM-LOCK.json",
+        "kind": "package-metadata",
+        "hostDependency": "none"
+      },
+      {
+        "path": "components/SkinVector2022.vue",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "components/Vector2022SettingModal.vue",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "components/Vector2022VariantLayout.vue",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "contracts/commonjs-esm-origin-contract.json",
+        "kind": "generation-contract",
+        "hostDependency": "none"
+      },
+      {
+        "path": "contracts/mediawiki-typeahead-search-contract.json",
+        "kind": "generation-contract",
+        "hostDependency": "none"
+      },
+      {
+        "path": "contracts/message-origin-contract.json",
+        "kind": "generation-contract",
+        "hostDependency": "none"
+      },
+      {
+        "path": "contracts/resource-loader-origin-contract.json",
+        "kind": "generation-contract",
+        "hostDependency": "none"
+      },
+      {
+        "path": "contracts/skin-variant-contract.json",
+        "kind": "generation-contract",
+        "hostDependency": "none"
+      },
+      {
+        "path": "contracts/upstream-build-toolchains/design-codex-2.5.1/package-lock.json",
+        "kind": "upstream-build-contract",
+        "hostDependency": "none"
+      },
+      {
+        "path": "contracts/upstream-build-toolchains/design-codex-2.5.1/package.json",
+        "kind": "upstream-build-contract",
+        "hostDependency": "none"
+      },
+      {
+        "path": "css/host-content.css",
+        "kind": "skin-integration",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "css/host-content/foundation.css",
+        "kind": "skin-integration",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "css/host-content/links.css",
+        "kind": "skin-integration",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "css/host-modal.css",
+        "kind": "skin-integration",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "css/vector-2022-adapter.css",
+        "kind": "skin-integration",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "layout.vue",
+        "kind": "skin-integration",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/RawHtmlFragment.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/adapters/mediawiki-codex-icons.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/adapters/mediawiki-page-ready.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/adapters/mediawiki-runtime.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/adapters/mediawiki-typeahead-instrumentation.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/adapters/mediawiki-vue-component-environment.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/adapters/thetree-search-suggest.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/adapters/thetree-settings.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/adapters/thetree-watchstar.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/adapters/vector2022-mediawiki-environment.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/mustacheVueRuntime.js",
+        "kind": "origin-runtime",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/runtime/createVector2022RuntimeController.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/skinVariant.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/vector2022ComponentData.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/vector2022DocumentEnvironment.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/vector2022FooterData.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/vector2022HostAdapterPolicy.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/vector2022HostState.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/vector2022Messages.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/vector2022PageContract.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/vector2022SkinData.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/vector2022SpecialPageContract.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/vector2022TemplateData.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/vector2022TheTreeAdapter.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "lib/vector2022TitleData.js",
+        "kind": "host-adapter",
+        "hostDependency": "thetree"
+      },
+      {
+        "path": "package-lock.json",
+        "kind": "package-metadata",
+        "hostDependency": "none"
+      },
+      {
+        "path": "package.json",
+        "kind": "package-metadata",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/bootstrap-checkout-contract-test.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/bootstrap-upstream.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/commonjs-esm-origin-engine.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/distribution-contract-test.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/generate-origin.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/host-adapter-feature-contract-test.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/host-content-contract-test.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/host-view-contract-engine.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/javascript-port-origin-engine.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/message-origin-engine.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/mustache-origin-contract-test.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/mustache-vue-origin-engine.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/php-array-literal.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/resource-loader-contract.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/resource-loader-custom-properties.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/resource-loader-less.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/resource-loader-origin-engine.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/resource-loader-origin-schema.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/resource-loader-output-adapter.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/runtime-asset-origin-engine.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/search-suggest-origin-contract-test.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/shared/deterministic.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/shared/files.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/shared/git-blobs.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/skin-variant-contract-test.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/sync-origin-manifest.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/vector-2022-parity-contract-test.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/vue-sfc-origin-engine.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      },
+      {
+        "path": "tools/watchstar-adapter-contract-test.mjs",
+        "kind": "generation-tool",
+        "hostDependency": "none"
+      }
+    ],
+    "generatedFiles": [
+      {
+        "path": "components/Appearance.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Appearance.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableElement/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableElement/Open.mustache"
+        ]
+      },
+      {
+        "path": "components/BeforeContent.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/BeforeContent.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Indicators.mustache"
+        ]
+      },
+      {
+        "path": "components/BottomDock.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/BottomDock.mustache",
+        "partialDependencies": []
+      },
+      {
+        "path": "components/Button.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Button.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Icon.mustache"
+        ]
+      },
+      {
+        "path": "components/ColumnEnd.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/ColumnEnd.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Appearance.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PageTools.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Pinned/Open.mustache"
+        ]
+      },
+      {
+        "path": "components/ColumnStart.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/ColumnStart.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/MainMenuPinned.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Pinned/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/TableOfContents.mustache"
+        ]
+      },
+      {
+        "path": "components/Dropdown/Close.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Close.mustache",
+        "partialDependencies": []
+      },
+      {
+        "path": "components/Dropdown/Open.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Open.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Icon.mustache"
+        ]
+      },
+      {
+        "path": "components/Footer__row.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Footer__row.mustache",
+        "partialDependencies": []
+      },
+      {
+        "path": "components/Footer.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Footer.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Footer__row.mustache"
+        ]
+      },
+      {
+        "path": "components/Header.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Header.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Logo.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/MainMenuDropdown.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/SearchBox.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/UserLinks.mustache"
+        ]
+      },
+      {
+        "path": "components/Icon.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Icon.mustache",
+        "partialDependencies": []
+      },
+      {
+        "path": "components/Indicators.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Indicators.mustache",
+        "partialDependencies": []
+      },
+      {
+        "path": "components/LanguageDropdown.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/LanguageDropdown.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/MenuContents.mustache"
+        ]
+      },
+      {
+        "path": "components/LegacyMenu.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/LegacyMenu.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/MenuContents.mustache"
+        ]
+      },
+      {
+        "path": "components/LegacySearchBox.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/LegacySearchBox.mustache",
+        "partialDependencies": []
+      },
+      {
+        "path": "components/LegacySidebar.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/LegacySidebar.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/LegacyMenu.mustache"
+        ]
+      },
+      {
+        "path": "components/LegacyUserLinks.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/LegacyUserLinks.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/LegacyMenu.mustache"
+        ]
+      },
+      {
+        "path": "components/Link.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Link.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Icon.mustache"
+        ]
+      },
+      {
+        "path": "components/Logo.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Logo.mustache",
+        "partialDependencies": []
+      },
+      {
+        "path": "components/MainMenu.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/MainMenu.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Menu.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableElement/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableElement/Open.mustache"
+        ]
+      },
+      {
+        "path": "components/MainMenuDropdown.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/MainMenuDropdown.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/MainMenu.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Unpinned/Open.mustache"
+        ]
+      },
+      {
+        "path": "components/MainMenuPinned.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/MainMenuPinned.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/MainMenu.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Pinned/Open.mustache"
+        ]
+      },
+      {
+        "path": "components/Menu.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Menu.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/MenuContents.mustache"
+        ]
+      },
+      {
+        "path": "components/MenuContents.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/MenuContents.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/MenuListItem.mustache"
+        ]
+      },
+      {
+        "path": "components/MenuListItem.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/MenuListItem.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Link.mustache"
+        ]
+      },
+      {
+        "path": "components/PageTitlebar.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/PageTitlebar.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Button.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Indicators.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/LanguageDropdown.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Unpinned/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/TableOfContents.mustache"
+        ]
+      },
+      {
+        "path": "components/PageToolbar.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/PageToolbar.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PageTools.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Unpinned/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Tabs.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Variants.mustache"
+        ]
+      },
+      {
+        "path": "components/PageTools.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/PageTools.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Menu.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableElement/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableElement/Open.mustache"
+        ]
+      },
+      {
+        "path": "components/PinnableContainer/Close.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Close.mustache",
+        "partialDependencies": []
+      },
+      {
+        "path": "components/PinnableContainer/Pinned/Open.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Pinned/Open.mustache",
+        "partialDependencies": []
+      },
+      {
+        "path": "components/PinnableContainer/Unpinned/Open.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Unpinned/Open.mustache",
+        "partialDependencies": []
+      },
+      {
+        "path": "components/PinnableElement/Close.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/PinnableElement/Close.mustache",
+        "partialDependencies": []
+      },
+      {
+        "path": "components/PinnableElement/Open.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/PinnableElement/Open.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableHeader.mustache"
+        ]
+      },
+      {
+        "path": "components/PinnableHeader.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/PinnableHeader.mustache",
+        "partialDependencies": []
+      },
+      {
+        "path": "components/SearchBox.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/SearchBox.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Button.mustache"
+        ]
+      },
+      {
+        "path": "components/skin-legacy.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/skin-legacy.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/BottomDock.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Footer.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Indicators.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/LegacyMenu.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/LegacySearchBox.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/LegacySidebar.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/LegacyUserLinks.mustache"
+        ]
+      },
+      {
+        "path": "components/skin.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/skin.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/BeforeContent.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/BottomDock.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/ColumnEnd.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/ColumnStart.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Footer.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Header.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/LanguageDropdown.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PageTitlebar.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PageToolbar.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/StickyHeader.mustache"
+        ]
+      },
+      {
+        "path": "components/StickyHeader.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/StickyHeader.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Button.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Unpinned/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/SearchBox.mustache"
+        ]
+      },
+      {
+        "path": "components/TableOfContents__line.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/TableOfContents__line.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/TableOfContents__line.mustache"
+        ]
+      },
+      {
+        "path": "components/TableOfContents__list.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/TableOfContents__list.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/TableOfContents__line.mustache"
+        ]
+      },
+      {
+        "path": "components/TableOfContents.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/TableOfContents.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableElement/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableElement/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/TableOfContents__list.mustache"
+        ]
+      },
+      {
+        "path": "components/Tabs.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Tabs.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/MenuContents.mustache"
+        ]
+      },
+      {
+        "path": "components/UserLinks.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/UserLinks.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Appearance.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Menu.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/PinnableContainer/Unpinned/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/UserLinksDropdown.mustache"
+        ]
+      },
+      {
+        "path": "components/UserLinksDropdown.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/UserLinksDropdown.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Menu.mustache"
+        ]
+      },
+      {
+        "path": "components/Variants.vue",
+        "originNode": "mustache-components",
+        "input": "vendor/mediawiki-vector-2022/includes/templates/Variants.mustache",
+        "partialDependencies": [
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Close.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Dropdown/Open.mustache",
+          "vendor/mediawiki-vector-2022/includes/templates/Menu.mustache"
+        ]
+      },
+      {
+        "path": "css/vendor/resource-loader/mediawiki-variable-shim.css",
+        "originNode": "resource-loader-css"
+      },
+      {
+        "path": "css/vendor/resource-loader/mediawiki.codex.typeaheadSearch.css",
+        "originNode": "resource-loader-css"
+      },
+      {
+        "path": "css/vendor/resource-loader/mediawiki.skinning.typeaheadSearch.css",
+        "originNode": "resource-loader-css"
+      },
+      {
+        "path": "css/vendor/resource-loader/page-styles.css",
+        "originNode": "resource-loader-css"
+      },
+      {
+        "path": "css/vendor/resource-loader/skins.vector.clientPreferences.css",
+        "originNode": "resource-loader-css"
+      },
+      {
+        "path": "css/vendor/resource-loader/skins.vector.icons.css",
+        "originNode": "resource-loader-css"
+      },
+      {
+        "path": "css/vendor/resource-loader/skins.vector.js.css",
+        "originNode": "resource-loader-css"
+      },
+      {
+        "path": "css/vendor/resource-loader/skins.vector.search.codex.styles.css",
+        "originNode": "resource-loader-css"
+      },
+      {
+        "path": "css/vendor/resource-loader/skins.vector.styles.css",
+        "originNode": "resource-loader-css"
+      },
+      {
+        "path": "lib/generated/mediawiki-less-messages.json",
+        "originNode": "resource-loader-css"
+      },
+      {
+        "path": "lib/generated/mediawiki.codex.typeaheadSearch.js",
+        "originNode": "mediawiki-codex-esm",
+        "input": "vendor/mediawiki-core/resources/lib/codex/modules/CdxButton.cjs",
+        "dependencies": [
+          "vendor/mediawiki-core/resources/lib/codex/modules/CdxDialog.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/CdxIcon.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/CdxMenu.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/CdxMenuItem.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/CdxProgressBar.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/CdxSearchInput.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/CdxSearchResultTitle.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/CdxTextInput.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/CdxThumbnail.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/CdxTypeaheadSearch.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/Icon.js",
+          "vendor/mediawiki-core/resources/lib/codex/modules/_plugin-vue_export-helper.js",
+          "vendor/mediawiki-core/resources/lib/codex/modules/constants.js",
+          "vendor/mediawiki-core/resources/lib/codex/modules/unwrapElement.js",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useComputedDirection.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useComputedDisabled.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useComputedLanguage.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useFieldData.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useI18n.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useI18nWithOverride.js",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useIconOnlyButton.js",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useIntersectionObserver.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useModelWrapper.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useResizeObserver.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useScrollLock.js",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useSlotContents.js",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useSplitAttributes.cjs",
+          "vendor/mediawiki-core/resources/lib/codex/modules/useWarnOnce.cjs"
+        ]
+      },
+      {
+        "path": "lib/generated/mediawiki.skinning.typeaheadSearch/App.vue",
+        "originNode": "mediawiki-typeahead-search",
+        "input": "vendor/mediawiki-core/resources/src/mediawiki.skinning.typeaheadSearch/App.vue",
+        "dependencies": [
+          "lib/adapters/mediawiki-page-ready.js",
+          "lib/adapters/mediawiki-runtime.js",
+          "lib/adapters/mediawiki-typeahead-instrumentation.js",
+          "lib/adapters/mediawiki-vue-component-environment.js",
+          "lib/generated/mediawiki.codex.typeaheadSearch.js",
+          "lib/generated/mediawiki.skinning.typeaheadSearch/TypeaheadSearchWrapper.vue"
+        ]
+      },
+      {
+        "path": "lib/generated/mediawiki.skinning.typeaheadSearch/TypeaheadSearchWrapper.vue",
+        "originNode": "mediawiki-typeahead-search",
+        "input": "vendor/mediawiki-core/resources/src/mediawiki.skinning.typeaheadSearch/TypeaheadSearchWrapper.vue",
+        "dependencies": [
+          "lib/adapters/mediawiki-codex-icons.js",
+          "lib/adapters/mediawiki-vue-component-environment.js",
+          "lib/generated/mediawiki.codex.typeaheadSearch.js"
+        ]
+      },
+      {
+        "path": "lib/generated/vector-2022-messages.js",
+        "originNode": "mediawiki-vector-messages",
+        "input": "vendor/mediawiki-core/languages/i18n/nontranslatable/en.json",
+        "dependencies": [
+          "vendor/mediawiki-core/languages/i18n/en.json",
+          "vendor/mediawiki-core/languages/i18n/ko.json",
+          "vendor/mediawiki-vector-2022/i18n/en.json",
+          "vendor/mediawiki-vector-2022/i18n/ko.json"
+        ]
+      },
+      {
+        "path": "lib/generated/vector-client-preferences-config.js",
+        "originNode": "vector-javascript-ports",
+        "input": "vendor/mediawiki-vector-2022/resources/skins.vector.js/clientPreferences.json",
+        "dependencies": [],
+        "transform": {
+          "kind": "json-default"
+        }
+      },
+      {
+        "path": "lib/generated/vector-client-preferences.js",
+        "originNode": "vector-javascript-ports",
+        "input": "vendor/mediawiki-vector-2022/resources/skins.vector.clientPreferences/clientPreferences.js",
+        "dependencies": [],
+        "transform": {
+          "kind": "commonjs-object-exports",
+          "exportNames": [
+            "bind",
+            "toggleDocClassAndSave",
+            "render"
+          ]
+        }
+      }
+    ],
+    "materializedRuntimeAssets": []
+  },
+  "generation": {
+    "schema": 1,
+    "entrypoint": "tools/generate-origin.mjs",
+    "nodes": [
+      {
+        "id": "mustache-components",
+        "kind": "mustache-vue-directory",
+        "dependsOn": [],
+        "inputRoot": "vendor/mediawiki-vector-2022/includes/templates",
+        "outputRoot": "components",
+        "inputExtension": ".mustache",
+        "outputExtension": ".vue",
+        "outputInventory": "sourceInventory.generatedFiles",
+        "inputInventory": "sourceInventory.vendorFiles",
+        "partialResolution": "template-root-name",
+        "outputRelationContract": {
+          "inputField": "input",
+          "dependenciesField": "partialDependencies"
+        }
+      },
+      {
+        "id": "resource-loader-css",
+        "kind": "resource-loader-origin",
+        "dependsOn": [],
+        "contract": "contracts/resource-loader-origin-contract.json",
+        "outputInventory": "sourceInventory.generatedFiles"
+      },
+      {
+        "id": "mediawiki-codex-esm",
+        "kind": "commonjs-esm-origin",
+        "dependsOn": [],
+        "contract": "contracts/commonjs-esm-origin-contract.json",
+        "outputInventory": "sourceInventory.generatedFiles",
+        "outputRelationContract": {
+          "inputField": "input",
+          "dependenciesField": "dependencies"
+        }
+      },
+      {
+        "id": "mediawiki-typeahead-search",
+        "kind": "vue-sfc-origin",
+        "dependsOn": [
+          "mediawiki-codex-esm"
+        ],
+        "contract": "contracts/mediawiki-typeahead-search-contract.json",
+        "outputInventory": "sourceInventory.generatedFiles",
+        "outputRelationContract": {
+          "inputField": "input",
+          "dependenciesField": "dependencies"
+        }
+      },
+      {
+        "id": "mediawiki-vector-messages",
+        "kind": "message-origin",
+        "dependsOn": [],
+        "contract": "contracts/message-origin-contract.json",
+        "outputInventory": "sourceInventory.generatedFiles",
+        "outputRelationContract": {
+          "inputField": "input",
+          "dependenciesField": "dependencies"
+        }
+      },
+      {
+        "id": "vector-javascript-ports",
+        "kind": "javascript-ports",
+        "dependsOn": [],
+        "outputInventory": "sourceInventory.generatedFiles",
+        "outputRelationContract": {
+          "inputField": "input",
+          "dependenciesField": "dependencies"
+        }
+      }
+    ]
+  },
+  "integration": {
+    "schema": 1,
+    "skinVariant": {
+      "schema": 1,
+      "contract": "contracts/skin-variant-contract.json",
+      "runtimeModule": "lib/skinVariant.js",
+      "consumer": "components/Vector2022VariantLayout.vue",
+      "activationAttribute": "data-tt-skin-variant"
+    },
+    "moduleGraph": {
+      "schema": 1,
+      "ignoredRoots": [
+        ".build-tools",
+        ".git",
+        ".test-dist",
+        ".test-host",
+        ".upstream",
+        "node_modules",
+        "vendor"
+      ],
+      "allowedBareSpecifiers": [
+        "vue"
+      ],
+      "allowedSpecifierPrefixes": [
+        "node:",
+        "~/"
+      ]
+    },
+    "stylesheetDelivery": {
+      "schema": 1,
+      "mode": "ordered-vue-style-src",
+      "selection": "build-time-static",
+      "profile": "vector-2022",
+      "consumer": "components/Vector2022VariantLayout.vue",
+      "originBundle": "css/vendor/resource-loader/page-styles.css",
+      "adapterStyles": [
+        "css/vector-2022-adapter.css",
+        "css/host-content.css",
+        "css/host-modal.css"
+      ],
+      "resourceLoaderContract": "contracts/resource-loader-origin-contract.json",
+      "hostLimitation": "Vite resolves each ordered style source from the skin component; Vector 2022 owns chrome while host content remains isolated under thetree ownership."
+    }
+  }
+}

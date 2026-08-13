@@ -1,0 +1,17 @@
+{
+  "schema": "thetree-composable-skin/v1",
+  "id": "vector-2022",
+  "entry": "components/Vector2022VariantLayout.vue",
+  "contentSurface": "host",
+  "configNamespaces": [
+    "skin.vector-2022"
+  ],
+  "sharedConfigKeys": [
+    "wiki.logo_url",
+    "wiki.footer_text",
+    "wiki.lang",
+    "wiki.dir"
+  ],
+  "license": "GPL-2.0-or-later",
+  "prepare": ["npm", "run", "bootstrap"]
+}

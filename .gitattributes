@@ -1,0 +1,2 @@
+.gitattributes text eol=lf
+/contracts/upstream-build-toolchains/**/package-lock.json text eol=lf

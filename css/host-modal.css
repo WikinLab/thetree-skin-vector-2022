@@ -1,0 +1,15 @@
+/*
+ * Structural baseline for thetree-owned global modals.
+ *
+ * thetree modal components assume the border-box reset supplied by the other
+ * supported skin frameworks. Vector deliberately retains the browser's
+ * content-box default, so restore that host invariant only inside the modal
+ * ownership boundary. :where() keeps the bridge weaker than component-scoped
+ * declarations.
+ */
+:where(.thetree-modal-container),
+:where(.thetree-modal-container) :where(*),
+:where(.thetree-modal-container) :where(*)::before,
+:where(.thetree-modal-container) :where(*)::after {
+  box-sizing: border-box;
+}

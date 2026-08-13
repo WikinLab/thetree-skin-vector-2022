@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "family": "vector",
+  "id": "vector-2022",
+  "upstreamSkinName": "vector-2022",
+  "composableEntry": "components/Vector2022VariantLayout.vue",
+  "upstream": {
+    "lessVariables": "vendor/mediawiki-vector-2022/resources/mediawiki.less/vector/mediawiki.skin.variables.less",
+    "elementsSource": "vendor/mediawiki-core/resources/src/mediawiki.skinning/elements.less",
+    "contentLinksSource": "vendor/mediawiki-core/resources/src/mediawiki.skinning/content.links.less"
+  }
+}

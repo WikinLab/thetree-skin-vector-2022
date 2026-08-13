@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "output": "lib/generated/vector-2022-messages.js",
+  "languages": {
+    "en": {
+      "sources": [
+        "vendor/mediawiki-core/languages/i18n/nontranslatable/en.json",
+        "vendor/mediawiki-core/languages/i18n/en.json",
+        "vendor/mediawiki-vector-2022/i18n/en.json"
+      ]
+    },
+    "ko": {
+      "fallback": "en",
+      "sources": [
+        "vendor/mediawiki-core/languages/i18n/ko.json",
+        "vendor/mediawiki-vector-2022/i18n/ko.json"
+      ]
+    }
+  }
+}

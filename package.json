@@ -1,0 +1,43 @@
+{
+  "private": true,
+  "name": "thetree-skin-vector-2022",
+  "version": "0.1.0",
+  "description": "MediaWiki Vector 2022 skin for the tree with locked, deterministic origin generation",
+  "type": "module",
+  "packageManager": "npm@10.8.2",
+  "engines": {
+    "node": ">=20.19.1",
+    "npm": ">=10.8.2"
+  },
+  "scripts": {
+    "preflight": "node tools/generate-origin.mjs --preflight",
+    "bootstrap": "node tools/bootstrap-upstream.mjs",
+    "bootstrap:verify": "node tools/bootstrap-upstream.mjs --verify",
+    "generate": "node tools/generate-origin.mjs",
+    "generate:check": "node tools/generate-origin.mjs --check",
+    "check:mustache": "node tools/mustache-origin-contract-test.mjs",
+    "check:distribution": "node tools/distribution-contract-test.mjs",
+    "check:bootstrap-checkout": "node tools/bootstrap-checkout-contract-test.mjs",
+    "check:skin-variant": "node tools/skin-variant-contract-test.mjs",
+    "sync:manifest": "node tools/sync-origin-manifest.mjs",
+    "check:parity": "node tools/vector-2022-parity-contract-test.mjs",
+    "check:host-content": "node tools/host-content-contract-test.mjs",
+    "check:host-adapter-features": "node tools/host-adapter-feature-contract-test.mjs",
+    "check:search-suggest-origin": "node tools/search-suggest-origin-contract-test.mjs",
+    "check:watchstar": "node tools/watchstar-adapter-contract-test.mjs",
+    "check:contracts": "npm run check:bootstrap-checkout && npm run check:mustache && npm run check:distribution && npm run check:skin-variant && npm run check:host-content && npm run check:host-adapter-features && npm run check:search-suggest-origin && npm run check:watchstar && npm run check:parity",
+    "check": "npm run generate:check && npm run check:contracts"
+  },
+  "dependencies": {
+    "mustache": "4.2.0",
+    "parse5": "8.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12",
+    "less": "4.6.7",
+    "postcss": "8.5.19",
+    "postcss-selector-parser": "7.1.4",
+    "postcss-value-parser": "4.2.0"
+  },
+  "license": "GPL-2.0-or-later"
+}

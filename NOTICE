@@ -1,0 +1,41 @@
+thetree-skin-vector-2022
+Copyright and upstream notices
+
+This package is licensed under GPL-2.0-or-later. See LICENSE.
+
+The distribution archive does not bundle upstream checkouts, unmodified upstream runtime asset copies,
+or generated outputs. `npm run bootstrap` retrieves the exact locked sources, materializes the required
+runtime assets, and performs deterministic generation. Full freshness and contract checks are available
+through `npm run bootstrap:verify`.
+
+1. MediaWiki Vector
+   Repository: wikimedia/mediawiki-skins-Vector
+   Ref: REL1_46
+   Commit: 3ea4696bcfb97ddaa06b52e5cf423ce48b18cb91
+   License: GPL-2.0-or-later
+
+2. MediaWiki core
+   Repository: wikimedia/mediawiki
+   Ref: 1.46.0
+   Commit: 63da3569472b40c3be833d392b7ce1843a5cbf62
+   License: GPL-2.0-or-later
+
+3. Wikimedia Codex
+   Repository: wikimedia/design-codex
+   Tag/commit: v2.5.1 / a45e090a15981638db499e2cf9ece119693913a2
+   License: GPL-2.0-or-later (Codex and design tokens); MIT (Codex Icons)
+
+4. mustache.js
+   Version: 4.2.0
+   License: MIT
+
+5. parse5
+   Version: 8.0.0
+   License: MIT
+
+6. entities (parse5 runtime dependency)
+   Version: 6.0.1
+   License: BSD-2-Clause
+
+The source inventory and generated output relationships are recorded in ORIGIN-MANIFEST.json.
+Complete permissive-license notices are in THIRD_PARTY_NOTICES.md.

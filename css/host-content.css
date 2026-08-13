@@ -1,0 +1,9 @@
+/*
+ * thetree source-content compatibility entry.
+ *
+ * It restores the host UI assumptions required by Vue content components.
+ * Link colors and decorators remain owned by thetree; only the shared
+ * no-underline policy is applied here.
+ */
+@import "./host-content/foundation.css";
+@import "./host-content/links.css";

@@ -1,0 +1,61 @@
+{
+  "schema": 2,
+  "components": [
+    {
+      "input": "vendor/mediawiki-core/resources/src/mediawiki.skinning.typeaheadSearch/App.vue",
+      "output": "lib/generated/mediawiki.skinning.typeaheadSearch/App.vue",
+      "modules": {
+        "./TypeaheadSearchWrapper.vue": {
+          "kind": "default",
+          "source": "lib/generated/mediawiki.skinning.typeaheadSearch/TypeaheadSearchWrapper.vue"
+        },
+        "vue": {
+          "kind": "named",
+          "from": "vue"
+        },
+        "mediawiki.codex.typeaheadSearch": {
+          "kind": "named",
+          "source": "lib/generated/mediawiki.codex.typeaheadSearch.js"
+        },
+        "./instrumentation.js": {
+          "kind": "default",
+          "source": "lib/adapters/mediawiki-typeahead-instrumentation.js"
+        },
+        "mediawiki.page.ready": {
+          "kind": "named",
+          "source": "lib/adapters/mediawiki-page-ready.js"
+        }
+      },
+      "globals": {
+        "mw": {
+          "kind": "default",
+          "source": "lib/adapters/mediawiki-runtime.js"
+        }
+      },
+      "mixins": [
+        "lib/adapters/mediawiki-vue-component-environment.js"
+      ]
+    },
+    {
+      "input": "vendor/mediawiki-core/resources/src/mediawiki.skinning.typeaheadSearch/TypeaheadSearchWrapper.vue",
+      "output": "lib/generated/mediawiki.skinning.typeaheadSearch/TypeaheadSearchWrapper.vue",
+      "modules": {
+        "./icons.json": {
+          "kind": "named",
+          "source": "lib/adapters/mediawiki-codex-icons.js"
+        },
+        "vue": {
+          "kind": "named",
+          "from": "vue"
+        },
+        "mediawiki.codex.typeaheadSearch": {
+          "kind": "named",
+          "source": "lib/generated/mediawiki.codex.typeaheadSearch.js"
+        }
+      },
+      "mixins": [
+        "lib/adapters/mediawiki-vue-component-environment.js"
+      ]
+    }
+  ]
+}

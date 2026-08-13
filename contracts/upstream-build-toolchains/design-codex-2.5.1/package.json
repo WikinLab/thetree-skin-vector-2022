@@ -1,0 +1,22 @@
+{
+  "name": "thetree-skin-vector-design-codex-build-toolchain",
+  "private": true,
+  "version": "2.5.1",
+  "dependencies": {
+    "@floating-ui/vue": "1.0.6",
+    "@rollup/plugin-typescript": "12.1.2",
+    "@vitejs/plugin-vue": "6.0.0",
+    "autoprefixer": "10.4.20",
+    "browserslist-config-wikimedia": "0.7.0",
+    "change-case": "5.4.4",
+    "less": "4.2.1",
+    "postcss": "8.5.6",
+    "postcss-rtlcss": "5.7.1",
+    "rtlcss": "4.3.0",
+    "style-dictionary": "4.3.3",
+    "svgo": "4.0.1",
+    "typescript": "5.9.3",
+    "vite": "7.0.4",
+    "vue": "3.5.17"
+  }
+}

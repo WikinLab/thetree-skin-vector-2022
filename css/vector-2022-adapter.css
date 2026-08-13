@@ -1,0 +1,21 @@
+/* the tree mount and lifecycle boundary around unmodified Vector 2022 chrome. */
+.tt-vector-2022 {
+  display: contents;
+  font-family: sans-serif;
+  font-size: 1rem;
+  line-height: normal;
+}
+
+/* The host renders its page component inside Vector's upstream body-content slot. */
+#mw-content-text[data-tt-host-content="1"] {
+  min-width: 0;
+}
+
+/* the tree can re-add its theme classes during SPA navigation; Vector theme classes own chrome. */
+.skin-vector-2022 .thetree-modal-container {
+  color-scheme: normal;
+}
+
+.vector-menu-content-list > .mw-list-item.tt-discuss-progress > a {
+  font-weight: 700;
+}

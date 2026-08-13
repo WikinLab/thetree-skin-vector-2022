@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "bundles": [
+    {
+      "id": "mediawiki.codex.typeaheadSearch",
+      "output": "lib/generated/mediawiki.codex.typeaheadSearch.js",
+      "exports": {
+        "CdxButton": "vendor/mediawiki-core/resources/lib/codex/modules/CdxButton.cjs",
+        "CdxDialog": "vendor/mediawiki-core/resources/lib/codex/modules/CdxDialog.cjs",
+        "CdxIcon": "vendor/mediawiki-core/resources/lib/codex/modules/CdxIcon.cjs",
+        "CdxTypeaheadSearch": "vendor/mediawiki-core/resources/lib/codex/modules/CdxTypeaheadSearch.cjs"
+      },
+      "external": [
+        "vue"
+      ],
+      "commonJsRoots": [
+        "vendor/mediawiki-core/resources/lib/codex/modules"
+      ],
+      "target": "es2020"
+    }
+  ]
+}

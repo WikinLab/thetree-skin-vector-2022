@@ -1,0 +1,10 @@
+/*
+ * Host-owned links retain thetree's palette and external-link decorator.
+ */
+:where(#mw-content-text[data-tt-host-content="1"]) :where(a),
+:where(#mw-content-text[data-tt-host-content="1"]) :where(a:hover),
+:where(#mw-content-text[data-tt-host-content="1"]) :where(a:focus),
+:where(#mw-content-text[data-tt-host-content="1"]) :where(a:active),
+:where(#mw-content-text[data-tt-host-content="1"]) :where(a:visited) {
+  text-decoration: none;
+}

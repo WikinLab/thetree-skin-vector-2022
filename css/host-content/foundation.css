@@ -1,0 +1,24 @@
+/*
+ * Structural baseline for thetree-owned UI mounted in #mw-content-text.
+ *
+ * thetree skin components are authored against the border-box reset supplied
+ * by their normal skin frameworks. Vector does not provide that reset. Apply
+ * the missing invariant only to host-owned elements. :where() keeps the
+ * bridge weaker than component-scoped declarations.
+ */
+:where(#mw-content-text[data-tt-host-content="1"]),
+:where(#mw-content-text[data-tt-host-content="1"]) :where(*),
+:where(#mw-content-text[data-tt-host-content="1"]) :where(*)::before,
+:where(#mw-content-text[data-tt-host-content="1"]) :where(*)::after {
+  box-sizing: border-box;
+}
+
+/*
+ * Host views can end with floated controls. Keep those controls inside the
+ * Vector content boundary without changing their component-owned alignment.
+ */
+:where(#mw-content-text[data-tt-host-content="1"])::after {
+  clear: both;
+  content: "";
+  display: block;
+}
